@@ -103,9 +103,6 @@ class ash:
                                                 [0] * (self.shift_num - i)]
 #            print(ash_den)
         self.ash_den = self.ash_den/self.shift_num  # take the average
-        ash_den_index = np.where(self.ash_den > 0)
-        self.ash_mesh = self.ash_mesh[ash_den_index]
-        self.ash_den = self.ash_den[ash_den_index]
 
     def calc_ash_unc(self):
         '''window at which 68.2% of the area is covered'''
